@@ -36,10 +36,45 @@
 		</dependency>
 		<!-- spring framework dependency end -->
 
+		<!-- jaxb dependencies start -->
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${jaxb.api.version}</version>
+		</dependency>
+		<!-- jaxb dependencies end -->
+
+		<!-- commons lang dependencies start -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.lang.version}</version>
+		</dependency>
+		<!-- commons lang dependencies end -->
+
+		<!-- jackson dependency start -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.mapper-core.version}</version>
+		</dependency>
+		<!-- jackson dependency end -->
+		<!-- hibernate dependency start -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<!-- hibernate dependency start -->
+
 	</dependencies>
 
 	<build>
-		<sourceDirectory>../src/main/java</sourceDirectory>
 		<!-- To define the plugin version in your parent POM -->
 		<pluginManagement>
 			<plugins>
