@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.softart.technology</groupId>
+		<artifactId>softart-technology-parent</artifactId>
+		<version>${softart.technology.version}</version>
+		<relativePath>../softart-technology-parent</relativePath>
+	</parent>
+	<artifactId>softart-technology-authentication</artifactId>
+	<name>Softwart Technology Authentication Application</name>
+	<description>Softwart Technology Authentication Application</description>
+
+	<dependencies>
+		<!-- project dependency start -->
+		<dependency>
+			<groupId>com.softart.technology</groupId>
+			<artifactId>softart-technology-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- project dependency end -->
+	</dependencies>
+	
+	<build>
+		<!-- To define the plugin version in your parent POM -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.version}</version>
+					<configuration>
+						<!-- or whatever version you use -->
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<!-- To use the plugin goals in your POM or parent POM -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
